@@ -32,7 +32,8 @@ Add the formula in views.py.
 Link the html document to urls.py.
 
 ## PROGRAM :
-area.html:
+### area.html:
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,8 +96,10 @@ area.html:
         </form>
     </div>
 </body>
+```
 
-views.py:
+### views.py:
+```
 from django.shortcuts import render
 
 def areacalculation(request):
@@ -113,9 +116,9 @@ def areacalculation(request):
         context['b']=b
         context['h']=h
     return render(request,"mathapp/area.html",context)
-    
-urls.py:
-
+``` 
+### urls.py:
+```
 from django.urls import path
 from mathapp import views
 
@@ -124,8 +127,10 @@ urlpatterns = [
     path('areaofrectangle/',views.areacalculation,name="areaofrectangle"),
     path('',views.areacalculation,name="areaofrectangle")
 ]
+```
 ## OUTPUT:
-![output](./Screenshot(111)).png
+![image](https://user-images.githubusercontent.com/94619247/154850044-b1870c91-33b8-4fc7-bd11-06da7faa20c6.png)
+
 
 
 
