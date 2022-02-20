@@ -28,7 +28,7 @@ In the html document design the page as required for getting the input values fo
 ### Step 6:
 Add the formula in views.py.
 
-###Step 7:
+### Step 7:
 Link the html document to urls.py.
 
 ## PROGRAM :
